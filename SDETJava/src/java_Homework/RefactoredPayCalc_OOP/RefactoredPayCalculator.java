@@ -6,9 +6,23 @@ import java.util.Scanner;
  employee based on employee type*/
 public class RefactoredPayCalculator {
 
+	public static Scanner scanner = new Scanner(System.in);
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+
+		int checkNewEmp = 0;
+		do {
+
+			calculateSalary();
+			System.out.println("Continue for another employee? (1/0)");
+			checkNewEmp = scanner.nextInt();
+			System.out.println("Thanks for your response");
+		} while (checkNewEmp == 1);
+		scanner.close();
+	}
+
+	public static void calculateSalary() {
 
 		// Initialising the type of employee and taking input from the user
 		String empType1 = "Regular";
@@ -16,6 +30,7 @@ public class RefactoredPayCalculator {
 		boolean continueProg = false;
 		RegularEmployee regEmp;
 		SalesEmployee salesEmp;
+
 		do {
 
 			continueProg = false;
@@ -55,8 +70,6 @@ public class RefactoredPayCalculator {
 				continueProg = true;
 			}
 		} while (continueProg);
-
-		scanner.close();
 
 	}
 
