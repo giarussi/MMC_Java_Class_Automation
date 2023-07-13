@@ -104,6 +104,7 @@ public class MusicLibrary {
 			duration = Double.parseDouble(br.readLine());
 
 			songs.add(new Song(title, artist, duration));
+			artists.add(artist);
 			System.out.println("Song Added successfully !");
 		}
 
@@ -216,6 +217,7 @@ public class MusicLibrary {
 
 		String artistName;
 		ArrayList<Song> songByArtist = new ArrayList<Song>();
+		System.out.println("Available artists: " + artists);
 		System.out.print("Enter the artist: ");
 		artistName = br.readLine();
 		for (Song s : songs) {
@@ -242,6 +244,10 @@ public class MusicLibrary {
 		songs.add(new Song("The Lion Sleeps tonight", "The Tokens", 2.40));
 		songs.add(new Song("I'll be there for you", "Why Everyone Left", 3.14));
 		songs.add(new Song("Pari Hu Me", "Falguni Pathak", 3));
+
+		artists.add("Falguni Pathak");
+		artists.add("The Tokens");
+		artists.add("Why Everyone Left");
 
 	}
 
