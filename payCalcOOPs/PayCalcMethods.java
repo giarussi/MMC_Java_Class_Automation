@@ -9,7 +9,7 @@ public class PayCalcMethods {
         boolean continueProgram = false;
         Scanner scanner = new Scanner(System.in);
         do {
-            setEmployeeType(getEmployeeTypeFromUser(scanner));
+            setEmployeeType(getEmployeeTypeFromUser(scanner)); 
             if (getEmployeeType().equalsIgnoreCase("sales")) {
                 employee = new SalesEmployee();
                 calculateSalesEmployeePay(scanner);

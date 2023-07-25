@@ -103,7 +103,7 @@ public class bookingInventoryMgmntApp {
 	}
 
 	public static void displayAllBooks(book displayBook[]) {
-		System.out.println("==========================");
+		System.out.println("=========================="); 
 		for (book book : displayBook) {
 
 			System.out.println("Title: " + book.getTitle());

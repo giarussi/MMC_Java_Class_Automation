@@ -4,18 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Class to provide menu of basic functionality while handling different
- * exceptions
- * 
- * @author U1248069
- *
- */
+
 public class MainClass {
 	// Class variables
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static int fNumber, sNumber;
-
+ 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
@@ -66,12 +60,7 @@ public class MainClass {
 
 	}
 
-	/**
-	 * Method to accept input from user
-	 * 
-	 * @throws IOException
-	 * @throws WrongArgumentException
-	 */
+	
 	public static void acceptNumbers() throws IOException, WrongArgumentException {
 		try {
 			// accepts numbers. Throws Exception if not integer

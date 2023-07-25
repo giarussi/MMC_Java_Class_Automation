@@ -11,7 +11,7 @@ public class RegularEmployee extends Employee {
     }
 
     public double calculateSalary(double... args) {
-    	double regularEmpHourlyPayRate = args[0];
+    	double regularEmpHourlyPayRate = args[0]; 
         double hoursWorked = args[1];
 
         while (hoursWorked > maxHoursWorked || hoursWorked < minHoursWorked) {

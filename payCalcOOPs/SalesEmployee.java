@@ -14,7 +14,7 @@ public class SalesEmployee extends Employee {
 		double bonus = 0.0;
 
 		if (sales > bonusCeilings[2]) {
-			bonus = bonuses[2];
+			bonus = bonuses[2]; 
 			System.out.println("Congratulations! You have exceeded the highest bonus level.");
 		} else if (sales > bonusCeilings[1]) {
 			bonus = bonuses[1];

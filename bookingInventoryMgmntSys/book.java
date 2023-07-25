@@ -14,17 +14,12 @@ public class book {
 	private String author;
 	
 
-	/**
-	 * default constructor to create a book and set title manually
-	 */
+	
 	public book() {
 
 	}
 
-	/**
-	 * Constructor to set details while creating book
-	 * 
-	 */
+	
 	public book(String title, String author, String dtPublication, String isbn) {
 		this.title = title;
 		this.author = author;
@@ -33,9 +28,7 @@ public class book {
 
 	}
 
-	/**
-	 * Display all details of the book
-	 */
+	
 	public void displayBookDetails() {
 		System.out.println("Book Details:");
 		System.out.println("Title: " + title);
@@ -56,7 +49,7 @@ public class book {
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(String title) { 
 		this.title = title;
 	}
 

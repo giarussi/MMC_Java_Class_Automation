@@ -10,7 +10,7 @@ public abstract class Employee {
     public abstract double calculateSalary(double... args);
 
     public String getEmployeeType() {
-        return employeeType;
+        return employeeType; 
     }
 
     public void setEmployeeType(String employeeType) {
